@@ -1,54 +1,142 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
   background: #f4f4f4;
+  color: #333;
 }
+
 header {
-  background: #008080;
+  background: #004d99;
   color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-nav {
-  background: #006666;
-  text-align: center;
-  padding: 10px;
+
+header h1 {
+  margin: 0;
 }
+
 nav a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
+  margin-left: 1.5rem;
   font-weight: bold;
 }
-nav a:hover {
+
+nav a:hover, nav a.active {
   text-decoration: underline;
 }
-.container {
-  padding: 20px;
-}
-img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-.card {
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
   background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
 }
+
+h2 {
+  color: #004d99;
+}
+
 .plans {
+  margin-top: 2rem;
+}
+
+.plan-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background: #e7f0ff;
+  padding: 1rem;
+  border-radius: 5px;
+  flex: 1 1 30%;
+  box-shadow: 0 0 5px #ccc;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
 }
-.plan {
-  background: #e6f7f7;
-  border: 1px solid #00cccc;
-  padding: 15px;
-  border-radius: 10px;
-}
-.plan h3 {
+
+.plan-card h3 {
   margin-top: 0;
 }
 
+.plan-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004d99;
+  margin: 1rem 0;
+}
+
+.plan-card button {
+  padding: 0.5rem;
+  background: #004d99;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.plan-card button:hover {
+  background: #003366;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery img {
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.feedback-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feedback-card {
+  background: #e7f0ff;
+  border-radius: 5px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 0 5px #ccc;
+  text-align: center;
+}
+
+.feedback-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  background: #004d99;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
